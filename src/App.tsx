@@ -1,7 +1,4 @@
-import React from 'react'
-import { useDisclosure } from '@mantine/hooks'
-import { Flex, AppShell, Burger, Button, Paper } from '@mantine/core'
-import { FaSun, FaMoon } from 'react-icons/fa'
+import { AppShell } from '@mantine/core'
 import './App.css'
 import { HeaderSimple } from './components/HeaderComponent/HeaderSimple'
 import { FooterSocial } from './components/FooterSocial/FooterSocial'
