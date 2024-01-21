@@ -52,7 +52,7 @@ import {
     ));
   
     return (
-      <Container size="lg" py="xl" className={classes.container}>
+      <Container size="lg" py="xl">
         <Group justify="center">
           <Badge variant="filled" size="lg">
             Best company ever
