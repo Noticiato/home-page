@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { IoClose, IoMenu } from "react-icons/io5";
+import imgLogo from "../../assets/logo-placeholder.png";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -19,7 +20,7 @@ const Navbar = () => {
     <header className="header">
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
-          <img src="src\assets\logo-placeholder.png" alt="noticiato logo" height="50" />
+          <img src={imgLogo} alt="noticiato logo" height="50" />
         </NavLink>
 
         <div

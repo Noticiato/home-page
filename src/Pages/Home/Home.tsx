@@ -1,4 +1,5 @@
 import './Home.css';
+import imgUrl from '../../assets/news-home.jpg';
 
 function Home() {
     return (
@@ -14,7 +15,7 @@ function Home() {
                 </div>
             </div>
             <div className='image'>
-                <img src='src\assets\news-home.jpg' alt='newspaper coffe'/>
+                <img src={imgUrl} alt='newspaper coffe'/>
             </div>
         </div>
     );
