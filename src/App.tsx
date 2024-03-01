@@ -1,39 +1,23 @@
-import { AppShell } from '@mantine/core'
-import { HeaderSimple } from './components/HeaderComponent/HeaderSimple'
-import { FooterSocial } from './components/FooterSocial/FooterSocial'
-import { HeroTitle } from './components/HeroTitle/HeroTitle'
-import { GetInTouchSimple } from './components/GetInTouchSimple/GetInTouchSimple'
-import { FeaturesCards } from './components/FeaturesCards/FeaturesCards'
-import { FeaturesTitle } from './components/FeaturesTitle/FeaturesTitle'
-import { CustomDivider } from './components/CustomDivider/CustomDivider'
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar/Navbar.tsx";
+import "./App.css";
+import Home from "./Pages/Home/Home";
+import Solution from "./Pages/Solution/Solution.tsx";
+import Form from "./Pages/Form/Form.tsx";
 
 function App() {
-  return (
-    <AppShell
-      header={{ height: 60 }}
-      footer={{ height: 60 }}
-      padding="md"
-    >
-      <AppShell.Header>
-        <HeaderSimple />
-      </AppShell.Header>
-
-      <AppShell.Main>
-        <HeroTitle/>
-        <CustomDivider/>
-        <FeaturesCards />
-        <CustomDivider/>
-        <FeaturesTitle />
-        <CustomDivider/>
-        <GetInTouchSimple />
-      </AppShell.Main>
-
-      <AppShell.Footer>
-        <FooterSocial />
-      </AppShell.Footer>
-    </AppShell>
-  )
+    return (
+        <Router>
+            <Navbar/>
+            <main className="main-content">
+                <Routes>
+                    <Route path="/" element={<Home />}/>
+                    <Route path="/solucao" element={<Solution />}/>
+                    <Route path="/form" element={<Form />}/>
+                </Routes>
+            </main>
+        </Router>
+      )
 }
 
 export default App

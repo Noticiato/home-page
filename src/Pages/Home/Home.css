@@ -1,0 +1,30 @@
+.home {
+    display: flex;
+    align-items: top;
+    justify-content: right;
+    min-height: 100%;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15rem;
+    width: 45%;
+}
+
+.main-headline {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.sub-headline {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    width: 70%;
+}
+
+img {
+    max-height: 100vh;
+}
+

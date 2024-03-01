@@ -1,0 +1,13 @@
+.main-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main-text p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: var(--h1-font-size);
+    margin-top: 4rem;
+    width: 50%;
+}
